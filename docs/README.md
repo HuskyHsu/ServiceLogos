@@ -26,7 +26,7 @@
 
 ### All items
 
-**CC BY-NC-SA 4.0 license is not granted for logos after ## Commit[c2cf292].**  
+**CC BY-NC-SA 4.0 license is not granted for logos after ## Commit[c2cf292].**
 **The following terms apply to logos after ## Commit[c2cf292]**
 
 1. The creator of these logos is SAWATSUKI. Copyright is not fully relinquished.
@@ -36,7 +36,7 @@
    > - Use of the logo for commercial purposes (such as selling products using a logo) is prohibited. However, you may sell products using a logo if the following items are applicable.
    >
    > 1. when the official service wants to sell the product for commercial purposes
-   > 2. when Sawaratsuki gives permission  
+   > 2. when Sawaratsuki gives permission
    >    (If you find any violation, please contact and report it to [@Sawaratsuki](https://x.com/sawaratsuki1004) immediately!)
 3. stickers and shirts can be used without permission within the scope of personal use!
 
@@ -45,7 +45,7 @@
 Please make a request in the issues. I'll create it once confirmed.
 Depending on individual schedules, I may not be able to respond immediately, so it might take several days.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > When posting a request in issues, be sure to include a request tag.
 
 # For officials of each service
@@ -63,8 +63,8 @@ If you would like to sell your product officially, please send a [Direct message
 
 # Acknowledgments
 
-These logos are derivative works.  
-There is nothing better than a logo used by each official.  
+These logos are derivative works.
+There is nothing better than a logo used by each official.
 I would like to express my deepest gratitude to the people who served in this publication.
 
 ## Image List
