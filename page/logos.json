@@ -1,0 +1,357 @@
+[
+    {
+        "folder": "404Notfound",
+        "urls": [
+            "404Notfound/NotFound.png"
+        ]
+    },
+    {
+        "folder": "Angular",
+        "urls": [
+            "Angular/Angular.png",
+            "Angular/Angular_Old.png"
+        ]
+    },
+    {
+        "folder": "ArchLinux",
+        "urls": [
+            "ArchLinux/ArchLinux.png"
+        ]
+    },
+    {
+        "folder": "C",
+        "urls": [
+            "C/C.png"
+        ]
+    },
+    {
+        "folder": "C#",
+        "urls": [
+            "C%23/C%23.png",
+            "C%23/C%23%20Purple.png"
+        ]
+    },
+    {
+        "folder": "C++",
+        "urls": [
+            "C%2B%2B/C%2B%2B.png"
+        ]
+    },
+    {
+        "folder": "C,C#,C++",
+        "urls": [
+            "C%2CC%23%2CC%2B%2B/All.png"
+        ]
+    },
+    {
+        "folder": "Clion",
+        "urls": [
+            "Clion/Clion.png"
+        ]
+    },
+    {
+        "folder": "Cloudflare",
+        "urls": [
+            "Cloudflare/Cloudflare.png"
+        ]
+    },
+    {
+        "folder": "Cobol",
+        "urls": [
+            "Cobol/Cobol.png"
+        ]
+    },
+    {
+        "folder": "Crowdstrike",
+        "urls": [
+            "Crowdstrike/CroudStrike.png"
+        ]
+    },
+    {
+        "folder": "Discord",
+        "urls": [
+            "Discord/Discord.png"
+        ]
+    },
+    {
+        "folder": "Figma",
+        "urls": [
+            "Figma/Figma.png"
+        ]
+    },
+    {
+        "folder": "FlipperZero",
+        "urls": [
+            "FlipperZero/FlipperZero.png"
+        ]
+    },
+    {
+        "folder": "Flutter",
+        "urls": [
+            "Flutter/FlutterTransparent.png"
+        ]
+    },
+    {
+        "folder": "FORTRAN",
+        "urls": [
+            "FORTRAN/FORTRAN.png"
+        ]
+    },
+    {
+        "folder": "GitHub",
+        "urls": [
+            "GitHub/GitHub.png"
+        ]
+    },
+    {
+        "folder": "GitLab",
+        "urls": [
+            "GitLab/GitLab.png"
+        ]
+    },
+    {
+        "folder": "Gnuemacs",
+        "urls": [
+            "Gnuemacs/GNUEmacs.png"
+        ]
+    },
+    {
+        "folder": "Go",
+        "urls": [
+            "Go/Golang.png"
+        ]
+    },
+    {
+        "folder": "Haskell",
+        "urls": [
+            "Haskell/Haskell.png",
+            "Haskell/Haskell%20%24.png"
+        ]
+    },
+    {
+        "folder": "Hono",
+        "urls": [
+            "Hono/Hono.png"
+        ]
+    },
+    {
+        "folder": "Html",
+        "urls": [
+            "Html/HTML.png"
+        ]
+    },
+    {
+        "folder": "Htmx",
+        "urls": [
+            "Htmx/htmx.png"
+        ]
+    },
+    {
+        "folder": "IamSeries",
+        "urls": [
+            "IamSeries/IamDesigner%21.png",
+            "IamSeries/IamDesigner%21English.png",
+            "IamSeries/IamProgrammer%21.png",
+            "IamSeries/IamProgrammerEnglish.png"
+        ]
+    },
+    {
+        "folder": "Java",
+        "urls": [
+            "Java/Java.png"
+        ]
+    },
+    {
+        "folder": "Juniper",
+        "urls": [
+            "Juniper/Juniper.png"
+        ]
+    },
+    {
+        "folder": "Kotlin",
+        "urls": [
+            "Kotlin/Kotlin.png",
+            "Kotlin/Kotlin_New.png"
+        ]
+    },
+    {
+        "folder": "Laravel",
+        "urls": [
+            "Laravel/Laravel.png"
+        ]
+    },
+    {
+        "folder": "MS-DOS",
+        "urls": [
+            "MS-DOS/MS-DOS.png"
+        ]
+    },
+    {
+        "folder": "Mui",
+        "urls": [
+            "Mui/Mui.png"
+        ]
+    },
+    {
+        "folder": "Next.js",
+        "urls": [
+            "Next.js/Next.js.png"
+        ]
+    },
+    {
+        "folder": "Node.js",
+        "urls": [
+            "Node.js/Node.js.png"
+        ]
+    },
+    {
+        "folder": "Photoshop",
+        "urls": [
+            "Photoshop/Photoshop.png"
+        ]
+    },
+    {
+        "folder": "Python",
+        "urls": [
+            "Python/Python.png"
+        ]
+    },
+    {
+        "folder": "Qwik.js",
+        "urls": [
+            "Qwik.js/Qwik.png"
+        ]
+    },
+    {
+        "folder": "RaspberryPi",
+        "urls": [
+            "RaspberryPi/Raspberry%20Pi.png"
+        ]
+    },
+    {
+        "folder": "React",
+        "urls": [
+            "React/React.png"
+        ]
+    },
+    {
+        "folder": "RhineLab",
+        "urls": [
+            "RhineLab/RhineLab.png"
+        ]
+    },
+    {
+        "folder": "Rider",
+        "urls": [
+            "Rider/Rider.png"
+        ]
+    },
+    {
+        "folder": "Rstudio",
+        "urls": [
+            "Rstudio/RStudio.png"
+        ]
+    },
+    {
+        "folder": "Ruby",
+        "urls": [
+            "Ruby/Ruby.png"
+        ]
+    },
+    {
+        "folder": "Rust",
+        "urls": [
+            "Rust/Rust.png"
+        ]
+    },
+    {
+        "folder": "Streamloots",
+        "urls": [
+            "Streamloots/Streamloots.png"
+        ]
+    },
+    {
+        "folder": "Swift",
+        "urls": [
+            "Swift/Swift.png"
+        ]
+    },
+    {
+        "folder": "Tailwindcss",
+        "urls": [
+            "Tailwindcss/Tailwindcss6.png"
+        ]
+    },
+    {
+        "folder": "Teamspeak",
+        "urls": [
+            "Teamspeak/TeamSpeak.png"
+        ]
+    },
+    {
+        "folder": "Twitter",
+        "urls": [
+            "Twitter/Twitter.png"
+        ]
+    },
+    {
+        "folder": "TypeScript",
+        "urls": [
+            "TypeScript/TypeScript.png"
+        ]
+    },
+    {
+        "folder": "Ubuntu",
+        "urls": [
+            "Ubuntu/Ubuntu.png"
+        ]
+    },
+    {
+        "folder": "UnityBlender",
+        "urls": [
+            "UnityBlender/UnityBlenderT.png"
+        ]
+    },
+    {
+        "folder": "Vim",
+        "urls": [
+            "Vim/VIM.png"
+        ]
+    },
+    {
+        "folder": "Vite",
+        "urls": [
+            "Vite/Vite.png"
+        ]
+    },
+    {
+        "folder": "Voicemod",
+        "urls": [
+            "Voicemod/Voicemod.png"
+        ]
+    },
+    {
+        "folder": "Vrchat",
+        "urls": [
+            "Vrchat/VRChat.png"
+        ]
+    },
+    {
+        "folder": "Vue",
+        "urls": [
+            "Vue/Vue.png"
+        ]
+    },
+    {
+        "folder": "Wallhack",
+        "urls": [
+            "Wallhack/WALLHACK.png"
+        ]
+    },
+    {
+        "folder": "X",
+        "urls": [
+            "X/X.png"
+        ]
+    }
+]

@@ -1,3 +1,4 @@
+import json
 import re
 from contextlib import suppress
 from dataclasses import dataclass
@@ -99,6 +100,32 @@ def generate_markdown(folders: FolderDict, locale: str | None = None) -> str:
     return "\n".join(lines)
 
 
+def generate_json(folders: FolderDict):
+    def get_image_tags(images: list[Path]) -> list[str]:
+        return [
+            quote(x.relative_to(ROOT_FOLDER).as_posix())
+            for x in images
+        ]
+
+    item_list = [
+        (
+            folder,
+            sorted(  # move exact match to first
+                images,
+                key=lambda x: "\0" if x.stem == folder else x.stem.lower(),
+            ),
+        )
+        for folder, images in sorted(folders.items(), key=lambda x: x[0].lower())
+    ]
+    lines = [
+        *({"folder": folder, "urls": get_image_tags(images)} for folder, images in item_list),
+    ]
+
+    file_path = "page/logos.json"
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(lines, f, indent=4)
+
+
 def replace_file(content: str, inner: str) -> str:
     start_index = content.find(START)
     end_index = content.find(END)
@@ -123,6 +150,7 @@ def process_file(info: ReadMeInfo, image_folders: FolderDict):
 def main():
     image_folders = find_image_folders()
     print(f"Found {len(image_folders)} image folders")
+    generate_json(image_folders)
     readme_files = find_readme()
     for info in readme_files:
         print(f"Processing {info.path.name}, locale: {info.locale}")
