@@ -1,37 +1,13 @@
 import data from "./logos.json" assert { type: "json" };
 
-const logos = data.flatMap((row) => {
-  return row.urls.map((url, _, arr) => {
-    const item = {
-      id: row.folder,
-      title: row.folder,
-      subTitle: null,
-      url: url,
-      checked: false,
-    };
-    if (arr.length > 1) {
-      item.subTitle = decodeURIComponent(url)
-        .split("/")[1]
-        .split(".")[0]
-        .replace(row.folder, "");
-      if (item.subTitle.startsWith("_") || item.subTitle.startsWith(" ")) {
-        item.subTitle = item.subTitle.substring(1);
-      }
-      item.id += `-${item.subTitle}`;
-    }
-    return item;
-  });
-});
-
-const targetDownloadButton = () => {
+function targetDownloadButton() {
   downloadButton.style.display = logos.some((logo) => logo.checked)
     ? "flex"
     : "none";
-};
 
-const contentDiv = document.querySelector(".content");
-const downloadButton = document.querySelector(".download button");
-const searchInput = document.querySelector("#search");
+  const count = logos.filter((logo) => logo.checked).length;
+  downloadButton.firstChild.nodeValue = `download (${count})`;
+}
 
 function genList() {
   contentDiv.innerHTML = "";
@@ -116,9 +92,15 @@ function genList() {
   return cards;
 }
 
-const cards = genList();
-searchInput.addEventListener("input", function () {
-  const keyword = this.value;
+async function urlToPromise(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error("Failed to fetch resource");
+  }
+  return response.blob();
+}
+
+function updateDisplay(keyword) {
   cards.forEach((card, i) => {
     const item = logos[i];
     if (item.title.toLowerCase().includes(keyword.toLowerCase())) {
@@ -127,8 +109,63 @@ searchInput.addEventListener("input", function () {
       card.style.display = "none";
     }
   });
+}
+
+function genZip() {
+  const zip = new JSZip();
+
+  logos
+    .filter((logo) => logo.checked)
+    .forEach((logo) => {
+      zip.file(
+        decodeURIComponent(logo.url).split("/")[1],
+        urlToPromise(`../${logo.url}`),
+        {
+          binary: true,
+        },
+      );
+    });
+
+  zip.generateAsync({ type: "blob" }).then(function (content) {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(content);
+    a.download = "ServerLogos.zip";
+    a.click();
+  });
+}
+
+const contentDiv = document.querySelector(".content");
+const downloadButton = document.querySelector(".download button");
+const searchInput = document.querySelector("#search");
+
+const logos = data.flatMap((row) => {
+  return row.urls.map((url, _, arr) => {
+    const item = {
+      id: row.folder,
+      title: row.folder,
+      subTitle: null,
+      url: url,
+      checked: false,
+    };
+    if (arr.length > 1) {
+      item.subTitle = decodeURIComponent(url)
+        .split("/")[1]
+        .split(".")[0]
+        .replace(row.folder, "");
+      if (item.subTitle.startsWith("_") || item.subTitle.startsWith(" ")) {
+        item.subTitle = item.subTitle.substring(1);
+      }
+      item.id += `-${item.subTitle}`;
+    }
+    return item;
+  });
+});
+
+const cards = genList();
+searchInput.addEventListener("input", function () {
+  updateDisplay(this.value);
 });
 
 downloadButton.addEventListener("click", function () {
-  console.log("qq");
+  genZip();
 });
