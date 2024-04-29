@@ -90,7 +90,7 @@ function updateList(keyword) {
       a.href = `../${item.url}`;
       a.download = item.url.split("/")[1];
       const downloadImg = document.createElement("img");
-      downloadImg.src = "./asset/download.svg";
+      downloadImg.src = "./asset/download_.svg";
       downloadImg.alt = "download";
       a.appendChild(downloadImg);
 

@@ -118,6 +118,12 @@ header .searchBar .icon {
   }
 }
 
+.card .check {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
 .card .check label {
   display: flex;
   flex-wrap: wrap;
