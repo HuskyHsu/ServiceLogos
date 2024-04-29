@@ -120,6 +120,7 @@ header .searchBar .icon {
 
 .card .check label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
@@ -127,9 +128,26 @@ header .searchBar .icon {
   font-weight: 400;
 }
 
+.card .check label .title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card .check label .titleCol {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card .check label span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .card .checkbox {
   width: 1.5rem;
   height: 1.5rem;
+  flex-shrink: 0;
   border: 1px solid rgb(68 50 102 / 30%);
   border-radius: 4px;
   position: relative;
@@ -154,7 +172,12 @@ header .searchBar .icon {
   display: block;
 }
 
-.card img {
+.card .downloadLink {
+  width: 32px;
+  height: 32px;
+}
+
+.card img.logo {
   width: 100%;
   object-fit: cover;
 }

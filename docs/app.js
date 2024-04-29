@@ -1,16 +1,39 @@
 import data from "./logos.json" assert { type: "json" };
 
+const logos = data.flatMap((row) => {
+  return row.urls.map((url, _, arr) => {
+    const item = {
+      id: row.folder,
+      title: row.folder,
+      subTitle: null,
+      url: url,
+      checked: false,
+    };
+    if (arr.length > 1) {
+      item.subTitle = decodeURIComponent(url)
+        .split("/")[1]
+        .split(".")[0]
+        .replace(row.folder, "");
+      if (item.subTitle.startsWith("_") || item.subTitle.startsWith(" ")) {
+        item.subTitle = item.subTitle.substring(1);
+      }
+      item.id += `-${item.subTitle}`;
+    }
+    return item;
+  });
+});
+
 const contentDiv = document.querySelector(".content");
 const downloadButton = document.querySelector(".download button");
-let pickSet = new Set();
+const searchInput = document.querySelector(".download button");
 
 function updateList(keyword) {
   contentDiv.innerHTML = "";
   const fragment = document.createDocumentFragment();
   downloadButton.style.display = "none";
 
-  data
-    .filter((item) => item.folder.toLowerCase().includes(keyword.toLowerCase()))
+  logos
+    .filter((item) => item.title.toLowerCase().includes(keyword.toLowerCase()))
     .forEach((item) => {
       const card = document.createElement("div");
       card.className = "card";
@@ -20,29 +43,23 @@ function updateList(keyword) {
 
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
-      checkbox.id = item.folder;
-      checkbox.name = item.folder;
-      checkbox.checked = pickSet.has(item.folder);
+      checkbox.id = item.id;
+      checkbox.name = item.id;
+      checkbox.checked = item.checked;
       if (checkbox.checked) {
         card.classList.toggle("checked");
       }
       checkbox.addEventListener("change", (e) => {
         card.classList.toggle("checked");
-        if (e.target.checked) {
-          pickSet.add(item.folder);
-        } else {
-          pickSet.remove(item.folder);
-        }
+        item.checked = e.target.checked;
 
-        downloadButton.style.display = Array.from(
-          contentDiv.querySelectorAll("div.card"),
-        ).some((card) => card.classList.contains("checked"))
+        downloadButton.style.display = logos.some((logo) => logo.checked)
           ? "flex"
           : "none";
       });
 
       const label = document.createElement("label");
-      label.htmlFor = item.folder;
+      label.htmlFor = item.id;
 
       const checkboxDiv = document.createElement("div");
       checkboxDiv.className = "checkbox";
@@ -53,14 +70,38 @@ function updateList(keyword) {
 
       checkboxDiv.appendChild(checkImg);
       label.appendChild(checkboxDiv);
-      label.appendChild(document.createTextNode(item.folder));
+
+      const title = document.createElement("div");
+      title.className = "title";
+      title.appendChild(document.createTextNode(item.title));
+
+      if (Boolean(item.subTitle)) {
+        const subTitleSpan = document.createElement("span");
+        subTitleSpan.textContent = `(${item.subTitle})`;
+        if (item.subTitle.length > 10) {
+          title.className = "titleCol";
+        }
+        title.appendChild(subTitleSpan);
+      }
+      label.appendChild(title);
+
+      const a = document.createElement("a");
+      a.className = "downloadLink";
+      a.href = `https://github.com/SAWARATSUKI/ServiceLogos/blob/main/${item.url}?raw=true`;
+      a.download = item.url.split("/")[1];
+      const downloadImg = document.createElement("img");
+      downloadImg.src = "./asset/download.svg";
+      downloadImg.alt = "download";
+      a.appendChild(downloadImg);
 
       checkDiv.appendChild(checkbox);
       checkDiv.appendChild(label);
+      checkDiv.appendChild(a);
 
       const logoImg = document.createElement("img");
-      logoImg.src = `https://github.com/SAWARATSUKI/ServiceLogos/blob/main/${item.urls[0]}?raw=true`;
-      logoImg.alt = "React";
+      logoImg.className = "logo";
+      logoImg.src = `https://github.com/SAWARATSUKI/ServiceLogos/blob/main/${item.url}?raw=true`;
+      logoImg.alt = item.id;
 
       card.appendChild(checkDiv);
       card.appendChild(logoImg);
@@ -69,14 +110,16 @@ function updateList(keyword) {
     });
 
   contentDiv.appendChild(fragment);
-  downloadButton.style.display = Array.from(
-    contentDiv.querySelectorAll("div.card"),
-  ).some((card) => card.classList.contains("checked"))
+  downloadButton.style.display = logos.some((logo) => logo.checked)
     ? "flex"
     : "none";
 }
 
 updateList("");
-document.getElementById("search").addEventListener("input", function () {
+searchInput.addEventListener("input", function () {
   updateList(this.value);
+});
+
+searchInput.addEventListener("click", function () {
+  console.log("xd");
 });
