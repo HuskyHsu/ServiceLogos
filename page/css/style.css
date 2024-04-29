@@ -59,7 +59,7 @@ header .searchBar input {
   outline: none;
   height: 2rem;
   width: 70%;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 0px 8px 8px 0px;
   padding: 0.5rem 1rem;
   max-width: 500px;
   font-size: 1.5rem;
@@ -70,11 +70,10 @@ header .searchBar .icon {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 8px 0px 0px 8px;
   height: 3rem;
   width: 3rem;
   background-color: #443266;
-  cursor: pointer;
 }
 
 .content {
