@@ -87,7 +87,7 @@ function updateList(keyword) {
 
       const a = document.createElement("a");
       a.className = "downloadLink";
-      a.href = `https://github.com/SAWARATSUKI/ServiceLogos/blob/main/${item.url}?raw=true`;
+      a.href = `../${item.url}`;
       a.download = item.url.split("/")[1];
       const downloadImg = document.createElement("img");
       downloadImg.src = "./asset/download.svg";
@@ -100,7 +100,7 @@ function updateList(keyword) {
 
       const logoImg = document.createElement("img");
       logoImg.className = "logo";
-      logoImg.src = `https://github.com/SAWARATSUKI/ServiceLogos/blob/main/${item.url}?raw=true`;
+      logoImg.src = `../${item.url}?raw=true`;
       logoImg.alt = item.id;
 
       card.appendChild(checkDiv);
