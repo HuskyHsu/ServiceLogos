@@ -137,7 +137,6 @@ header .searchBar .icon {
   display: flex;
   align-items: flex-end;
   word-break: break-all;
-  /* max-width: 80%; */
 }
 
 .card .check label .titleCol {
@@ -198,7 +197,6 @@ header .searchBar .icon {
 }
 
 .download button {
-  /* display: none; */
   background: linear-gradient(to right, #ffa029, #ffc778);
   border-radius: 300px;
   box-shadow:

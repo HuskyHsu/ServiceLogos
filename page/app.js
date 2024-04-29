@@ -55,7 +55,7 @@ function genList() {
     if (Boolean(item.subTitle)) {
       const subTitleSpan = document.createElement("span");
       subTitleSpan.textContent = `(${item.subTitle})`;
-      if (item.subTitle.length > 10) {
+      if (item.subTitle) {
         title.className = "titleCol";
       }
       title.appendChild(subTitleSpan);
