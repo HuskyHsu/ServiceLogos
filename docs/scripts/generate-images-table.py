@@ -121,7 +121,7 @@ def generate_json(folders: FolderDict):
         *({"folder": folder, "urls": get_image_tags(images)} for folder, images in item_list),
     ]
 
-    file_path = "docs/logos.json"
+    file_path = "page/logos.json"
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(lines, f, indent=4)
 

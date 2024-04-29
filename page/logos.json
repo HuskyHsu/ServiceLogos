@@ -1,8 +1,26 @@
 [
     {
+        "folder": "403Forbidden",
+        "urls": [
+            "403Forbidden/Forbidden.png"
+        ]
+    },
+    {
         "folder": "404Notfound",
         "urls": [
             "404Notfound/NotFound.png"
+        ]
+    },
+    {
+        "folder": "418I'mateapot",
+        "urls": [
+            "418I%27mateapot/418I%27mateapot.png"
+        ]
+    },
+    {
+        "folder": "503ServiceUnavailable",
+        "urls": [
+            "503ServiceUnavailable/ServiceUnavailable.png"
         ]
     },
     {
@@ -65,6 +83,12 @@
         "folder": "Crowdstrike",
         "urls": [
             "Crowdstrike/CroudStrike.png"
+        ]
+    },
+    {
+        "folder": "CSS\u5b8c\u5168\u306b\u7406\u89e3\u3057\u305f",
+        "urls": [
+            "CSS%E5%AE%8C%E5%85%A8%E3%81%AB%E7%90%86%E8%A7%A3%E3%81%97%E3%81%9F/CSS%E5%AE%8C%E5%85%A8%E3%81%AB%E7%90%86%E8%A7%A3%E3%81%97%E3%81%9F.png"
         ]
     },
     {
@@ -162,9 +186,21 @@
         ]
     },
     {
+        "folder": "Julia",
+        "urls": [
+            "Julia/Julia.png"
+        ]
+    },
+    {
         "folder": "Juniper",
         "urls": [
             "Juniper/Juniper.png"
+        ]
+    },
+    {
+        "folder": "Kernel Panic",
+        "urls": [
+            "Kernel%20Panic/KernelPanic.png"
         ]
     },
     {
@@ -178,6 +214,12 @@
         "folder": "Laravel",
         "urls": [
             "Laravel/Laravel.png"
+        ]
+    },
+    {
+        "folder": "Lisp",
+        "urls": [
+            "Lisp/Lisp.png"
         ]
     },
     {
@@ -316,6 +358,20 @@
         "folder": "Vim",
         "urls": [
             "Vim/VIM.png"
+        ]
+    },
+    {
+        "folder": "VisualStudio",
+        "urls": [
+            "VisualStudio/VisualStudio.png",
+            "VisualStudio/VisualStudioRound.png"
+        ]
+    },
+    {
+        "folder": "VisualStudioCode",
+        "urls": [
+            "VisualStudioCode/VisualStudioCode.png",
+            "VisualStudioCode/VisualStudioCodeRound.png"
         ]
     },
     {

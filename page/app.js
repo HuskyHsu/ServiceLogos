@@ -48,7 +48,7 @@ function genList() {
     checkboxDiv.appendChild(checkImg);
     label.appendChild(checkboxDiv);
 
-    const title = document.createElement("div");
+    const title = document.createElement("p");
     title.className = "title";
     title.appendChild(document.createTextNode(item.title));
 

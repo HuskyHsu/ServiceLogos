@@ -120,12 +120,12 @@ header .searchBar .icon {
 .card .check {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 0.5rem;
 }
 
 .card .check label {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
@@ -136,6 +136,8 @@ header .searchBar .icon {
 .card .check label .title {
   display: flex;
   align-items: flex-end;
+  word-break: break-all;
+  /* max-width: 80%; */
 }
 
 .card .check label .titleCol {
@@ -180,6 +182,7 @@ header .searchBar .icon {
 .card .downloadLink {
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
 }
 
 .card img.logo {
