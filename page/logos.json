@@ -24,6 +24,10 @@
     "urls": ["ArchLinux/ArchLinux.png"]
   },
   {
+    "folder": "Bluesky",
+    "urls": ["Bluesky/Bluesky.png"]
+  },
+  {
     "folder": "C",
     "urls": ["C/C.png"]
   },
@@ -98,6 +102,10 @@
     "urls": ["Go/Golang.png"]
   },
   {
+    "folder": "HackClub",
+    "urls": ["HackClub/HackClub.png"]
+  },
+  {
     "folder": "Haskell",
     "urls": ["Haskell/Haskell.png", "Haskell/Haskell%20%24.png"]
   },
@@ -165,6 +173,10 @@
   {
     "folder": "Node.js",
     "urls": ["Node.js/Node.js.png"]
+  },
+  {
+    "folder": "NullPointerException",
+    "urls": ["NullPointerException/NullPointerException.png"]
   },
   {
     "folder": "Photoshop",
@@ -237,6 +249,10 @@
   {
     "folder": "UnityBlender",
     "urls": ["UnityBlender/UnityBlenderT.png"]
+  },
+  {
+    "folder": "VercelAISDK",
+    "urls": ["VercelAISDK/AISDK.png"]
   },
   {
     "folder": "Vim",
