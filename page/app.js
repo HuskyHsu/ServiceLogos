@@ -1,6 +1,4 @@
-import data from "./logos.json" assert { type: "json" };
-
-function targetDownloadButton() {
+function targetDownloadButton(logos) {
   downloadButton.style.display = logos.some((logo) => logo.checked)
     ? "flex"
     : "none";
@@ -9,7 +7,7 @@ function targetDownloadButton() {
   downloadButton.firstChild.nodeValue = `download (${count})`;
 }
 
-function genList() {
+function genList(logos) {
   contentDiv.innerHTML = "";
   downloadButton.style.display = "none";
 
@@ -32,7 +30,7 @@ function genList() {
       card.classList.toggle("checked");
       item.checked = e.target.checked;
 
-      targetDownloadButton();
+      targetDownloadButton(logos);
     });
 
     const label = document.createElement("label");
@@ -87,7 +85,7 @@ function genList() {
   });
 
   contentDiv.append(...cards);
-  targetDownloadButton();
+  targetDownloadButton(logos);
 
   return cards;
 }
@@ -100,7 +98,7 @@ async function urlToPromise(url) {
   return response.blob();
 }
 
-function updateDisplay(keyword) {
+function updateDisplay(logos, cards, keyword) {
   cards.forEach((card, i) => {
     const item = logos[i];
     if (item.title.toLowerCase().includes(keyword.toLowerCase())) {
@@ -111,7 +109,7 @@ function updateDisplay(keyword) {
   });
 }
 
-function genZip() {
+function genZip(logos) {
   const zip = new JSZip();
 
   logos
@@ -138,34 +136,43 @@ const contentDiv = document.querySelector(".content");
 const downloadButton = document.querySelector(".download button");
 const searchInput = document.querySelector("#search");
 
-const logos = data.flatMap((row) => {
-  return row.urls.map((url, _, arr) => {
-    const item = {
-      id: row.folder,
-      title: row.folder,
-      subTitle: null,
-      url: url,
-      checked: false,
-    };
-    if (arr.length > 1) {
-      item.subTitle = decodeURIComponent(url)
-        .split("/")[1]
-        .split(".")[0]
-        .replace(row.folder, "");
-      if (item.subTitle.startsWith("_") || item.subTitle.startsWith(" ")) {
-        item.subTitle = item.subTitle.substring(1);
-      }
-      item.id += `-${item.subTitle}`;
-    }
-    return item;
+fetch('./logos.json')
+  .then((response) => response.json())
+  .then((data) => {
+    const logos = data.flatMap((row) => {
+      return row.urls.map((url, _, arr) => {
+        const item = {
+          id: row.folder,
+          title: row.folder,
+          subTitle: null,
+          url: url,
+          checked: false,
+        };
+        if (arr.length > 1) {
+          item.subTitle = decodeURIComponent(url)
+            .split("/")[1]
+            .split(".")[0]
+            .replace(row.folder, "");
+          if (item.subTitle.startsWith("_") || item.subTitle.startsWith(" ")) {
+            item.subTitle = item.subTitle.substring(1);
+          }
+          item.id += `-${item.subTitle}`;
+        }
+        return item;
+      });
+    });
+
+    const cards = genList(logos);
+    searchInput.addEventListener("input", function () {
+      updateDisplay(logos, cards, this.value);
+    });
+
+    downloadButton.addEventListener("click", function () {
+      genZip(logos);
+    });
+
+  })
+  .catch((error) => {
+    console.error('Error fetching JSON:', error);
   });
-});
 
-const cards = genList();
-searchInput.addEventListener("input", function () {
-  updateDisplay(this.value);
-});
-
-downloadButton.addEventListener("click", function () {
-  genZip();
-});
