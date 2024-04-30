@@ -161,6 +161,7 @@ header .searchBar .icon {
 
 .card .checkbox img {
   position: absolute;
+  top: -12px;
   bottom: 0px;
   width: 36px;
   height: 36px;
