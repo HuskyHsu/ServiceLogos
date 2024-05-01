@@ -219,6 +219,10 @@
     "urls": ["Rust/Rust.png"]
   },
   {
+    "folder": "Scratch",
+    "urls": ["Scratch/Scratch.png"]
+  },
+  {
     "folder": "Streamloots",
     "urls": ["Streamloots/Streamloots.png"]
   },

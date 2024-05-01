@@ -136,7 +136,7 @@ const contentDiv = document.querySelector(".content");
 const downloadButton = document.querySelector(".download button");
 const searchInput = document.querySelector("#search");
 
-fetch('./logos.json')
+fetch("./logos.json")
   .then((response) => response.json())
   .then((data) => {
     const logos = data.flatMap((row) => {
@@ -170,9 +170,7 @@ fetch('./logos.json')
     downloadButton.addEventListener("click", function () {
       genZip(logos);
     });
-
   })
   .catch((error) => {
-    console.error('Error fetching JSON:', error);
+    console.error("Error fetching JSON:", error);
   });
-
