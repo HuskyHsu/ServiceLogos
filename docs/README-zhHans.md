@@ -4,7 +4,7 @@
 
 # ServiceLogos
 
-你好，抑或是晚上好。
+你好，亦或是晚上好。
 
 这里是用来管理由さわらつき（SAWARATSUKI）制作的各种徽标（Logo）的仓库。
 
@@ -16,7 +16,7 @@
 
 # 许可证
 
-## 想要使用徽标的话请务必认真阅读本节
+## 想要使用徽标的话，请务必认真阅读本节
 
 > [!NOTE]
 >
@@ -129,6 +129,7 @@
 | [Rstudio](/Rstudio)                                                                      | <img src="../Rstudio/RStudio.png" alt="RStudio" width="100" />                                                                                                                                                                                                                                                                                            |
 | [Ruby](/Ruby)                                                                            | <img src="../Ruby/Ruby.png" alt="Ruby" width="100" />                                                                                                                                                                                                                                                                                                     |
 | [Rust](/Rust)                                                                            | <img src="../Rust/Rust.png" alt="Rust" width="100" />                                                                                                                                                                                                                                                                                                     |
+| [Scratch](/Scratch)                                                                      | <img src="../Scratch/Scratch.png" alt="Scratch" width="100" />                                                                                                                                                                                                                                                                                            |
 | [Streamloots](/Streamloots)                                                              | <img src="../Streamloots/Streamloots.png" alt="Streamloots" width="100" />                                                                                                                                                                                                                                                                                |
 | [Swift](/Swift)                                                                          | <img src="../Swift/Swift.png" alt="Swift" width="100" />                                                                                                                                                                                                                                                                                                  |
 | [Tailwindcss](/Tailwindcss)                                                              | <img src="../Tailwindcss/Tailwindcss6.png" alt="Tailwindcss6" width="100" />                                                                                                                                                                                                                                                                              |
