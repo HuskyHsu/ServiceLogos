@@ -2,72 +2,70 @@
 
 [English README](README.md) | [日本語 README](README-ja.md) | [简体中文 README](README-zhHans.md) | [繁體中文 README](README-zhHant.md) | [Español README](README-es.md) | [README Français](README-fr.md) | [Indonesian README](README-id.md)
 
-# Archive ServiceLogos
+# ServiceLogos
 
 > [!WARNING]
-> The logos here are not official logos.
+> Logo yang ada di sini bukanlah logo resmi.
 
 > [!Important]
-> In no circumstances do I allow the use of a logo I created for AI learning.
+> Dalam kondisi apa pun, logo-logo tersebut tidak diizinkan untuk digunakan untuk pembelajaran AI.
 
-# License
+# Lisensi
 
-## If you want to use a logo, please read this section carefully.
+## Jika Anda ingin menggunakan logo, pastikan Anda membaca bagian ini.
 
 > [!NOTE]
 >
-> ### Summary:
+> ### Ringkasan:
 >
-> - You are free to use this logo for non-commercial, non-profit purposes.
->   For example, you can print it as stickers, as icons for editors, etc.
-> - Please give the appropriate credits!
->   You are free to modify or remix it, but you must license that new work under the same license as this original logo.
-> - If you create something using this logo, mentioning me on [Twitter](https://x.com/sawaratsuki1004) when posting would be motivating!
+> - Anda bebas menggunakan logo ini untuk tujuan non-komersial dan nirlaba. Misalnya, Anda dapat mencetaknya sebagai stiker, sebagai ikon untuk editor, dll.
+> - Tolong berikan kredit yang sesuai! Anda bebas untuk memodifikasi atau me-remixnya, namun Anda harus melisensikan karya baru tersebut di bawah lisensi yang sama dengan logo asli ini.
+> - Jika Anda membuat sesuatu dengan menggunakan logo ini, akan sangat memotivasi jika Anda [menyebutkan SAWATSUKI](https://x.com/sawaratsuki1004) dan mempostingnya!
 
-### All items
+### Semua bagian
 
-**CC BY-NC-SA 4.0 license is not granted for logos after ## Commit[c2cf292].**
-**The following terms apply to logos after ## Commit[c2cf292]**
+**Lisensi CC BY-NC-SA 4.0 tidak diberikan untuk logo setelah ## Commit[c2cf292].**  
+**Untuk logo setelah ## Commit[c2cf292], ketentuan berikut ini berlaku.**
 
-1. The creator of these logos is SAWATSUKI. Copyright is not fully relinquished.
-2. please make sure that
-   > - It is recommended that credits are clearly indicated.
-   > - You may alter or remix the work.
-   > - Use of the logo for commercial purposes (such as selling products using a logo) is prohibited. However, you may sell products using a logo if the following items are applicable.
+1. Pencipta logo-logo ini adalah SAWATSUKI. Hak cipta belum sepenuhnya dilepaskan.
+2. Pastikan hal-hal berikut ini
+   > - Disarankan agar kredit dinyatakan dengan jelas. Ini adalah alat motivasi, jadi mohon.
+   > - Anda boleh mengubah atau me-remix karya ini.
+   > - Dilarang menggunakan karya untuk tujuan komersial (misalnya menjual produk dengan menggunakan logo). Namun, karya tersebut dapat dijual jika hal-hal berikut ini berlaku.
    >
-   > 1. when the official service wants to sell the product for commercial purposes
-   > 2. when Sawaratsuki gives permission
-   >    (If you find any violation, please contact and report it to [@Sawaratsuki](https://x.com/sawaratsuki1004) immediately!)
-3. stickers and shirts can be used without permission within the scope of personal use!
+   > 1. Jika petugas dari layanan yang bersangkutan ingin menjual produk untuk tujuan komersial
+   > 2. Jika SAWATSUKI telah memberikan izin  
+   >    (Jika Anda menemukan pelanggaran, segera hubungi [@Sawaratsuki] (https://x.com/sawaratsuki1004)!
+3. Pembuatan stiker dan kaos dapat digunakan tanpa izin dalam lingkup penggunaan pribadi!
 
-# Want a logo that's not here!
+# Saya ingin logo yang tidak ada di sini!
 
-Please make a request in the issues. I'll create it once confirmed.
-Depending on individual schedules, I may not be able to respond immediately, so it might take several days.
+Silakan kirimkan di #issues. Kami akan membuatnya segera setelah kami mengonfirmasinya.
+Kami mungkin tidak dapat merespons karena jadwal pribadi. Mungkin perlu waktu beberapa hari.
 
-> [!IMPORTANT]
-> When posting a request in issues, be sure to include a request tag.
+> [!IMPORTANT]  
+> Saat mengirimkan issues, pastikan untuk menyertakan tag "request".
 
-# For officials of each service
+# Untuk pejabat dari layanan yang bersangkutan.
 
-Please send a [Direct message to me](https://x.com/sawaratsuki1004) to request a logo removal.
-I will remove it immediately.
-If you would like to sell your product officially, please send a [Direct message to me](https://x.com/sawaratsuki1004) in the same way!
+Jika Anda ingin meminta penghapusan logo, silakan hubungi [saya melalui DM](https://x.com/sawaratsuki1004)  
+Kami akan segera menghapusnya!  
+Jika Anda ingin menjualnya secara resmi, silakan hubungi [saya melalui DM](https://x.com/sawaratsuki1004) juga!
 
-# Tools used for designing
+# Alat yang digunakan untuk mendesain
 
 - Photoshop / Illustrator
-- Font [Eureka Font]
-- My motivation and feelings
-- Feedback posts from everyone
+- Font [Font Eureka].
+- Motivasi dan perasaan Sawaratsuki
+- Kiriman umpan balik Anda.
 
-# Acknowledgments
+# Ucapan terima kasih
 
-These logos are derivative works.
-There is nothing better than a logo used by each official.
-I would like to express my deepest gratitude to the people who served in this publication.
+Logo-logo ini adalah karya turunan.  
+Mereka tidak lebih baik dari logo yang digunakan oleh masing-masing layanan resmi.  
+Saya ingin mengucapkan terima kasih yang sebesar-besarnya kepada orang-orang yang telah membantu publikasi ini.
 
-## Image List
+# List gambar
 
 <!-- image-list: start -->
 
@@ -76,7 +74,7 @@ I would like to express my deepest gratitude to the people who served in this pu
 | [403Forbidden](/403Forbidden)                                                            | <img src="../403Forbidden/Forbidden.png" alt="Forbidden" width="100" />                                                                                                                                                                                                                                                                                   |
 | [404Notfound](/404Notfound)                                                              | <img src="../404Notfound/NotFound.png" alt="NotFound" width="100" />                                                                                                                                                                                                                                                                                      |
 | [418I'mateapot](/418I%27mateapot)                                                        | <img src="../418I%27mateapot/418I%27mateapot.png" alt="418I%27mateapot" width="100" />                                                                                                                                                                                                                                                                    |
-| [503ServiceUnavailable](/503ServiceUnavailable)                                          | <img src="../503ServiceUnavailable/ServiceUnavailable.png" alt="ServiceUnavailable" width="100" />                                                                                                                                                                                                                                                        |
+| [503ServiceUnavailable\.png](/503ServiceUnavailable.png)                                 | <img src="../503ServiceUnavailable.png/ServiceUnavailable.png" alt="ServiceUnavailable" width="100" />                                                                                                                                                                                                                                                    |
 | [Angular](/Angular)                                                                      | <img src="../Angular/Angular.png" alt="Angular" width="100" /> <img src="../Angular/Angular_Old.png" alt="Angular_Old" width="100" />                                                                                                                                                                                                                     |
 | [ArchLinux](/ArchLinux)                                                                  | <img src="../ArchLinux/ArchLinux.png" alt="ArchLinux" width="100" />                                                                                                                                                                                                                                                                                      |
 | [Bluesky](/Bluesky)                                                                      | <img src="../Bluesky/Bluesky.png" alt="Bluesky" width="100" />                                                                                                                                                                                                                                                                                            |
@@ -149,8 +147,4 @@ I would like to express my deepest gratitude to the people who served in this pu
 
 <!-- image-list: end -->
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=SAWARATSUKI/ServiceLogos&type=Date)](https://star-history.com/#SAWARATSUKI/ServiceLogos&Date)
-
-If there is any inconsistency in the README of each language, the Japanese README will take precedence.
+Jika terdapat ketidakkonsistenan dalam README masing-masing bahasa, maka README bahasa Jepang yang akan diutamakan.
