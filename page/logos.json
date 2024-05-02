@@ -183,6 +183,10 @@
     "urls": ["Photoshop/Photoshop.png"]
   },
   {
+    "folder": "PHP",
+    "urls": ["PHP/PHP_fix.png"]
+  },
+  {
     "folder": "Python",
     "urls": ["Python/Python.png"]
   },
@@ -285,8 +289,8 @@
     "urls": ["Voicemod/Voicemod.png"]
   },
   {
-    "folder": "Vrchat",
-    "urls": ["Vrchat/VRChat.png"]
+    "folder": "VRChat",
+    "urls": ["VRChat/VRChat.png"]
   },
   {
     "folder": "Vue",
